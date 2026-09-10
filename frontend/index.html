@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SuplyFast</title>
+    <link rel="stylesheet" href="./src/input.css">
+</head>
+<body class="bg-stone-200 min-h-screen flex items-center justify-center font-sans antialiased text-slate-800 sm:p-4">
+
+    <!-- Container Mobile Phone -->
+    <div class="w-full max-w-[420px] h-[100dvh] sm:h-[860px] bg-[#f8fafc] sm:rounded-[40px] shadow-2xl overflow-hidden relative flex flex-col sm:border-[8px] sm:border-slate-800">
+        
+        <!-- Topo com Gradiente Corporativo SupplyFast -->
+        <header class="bg-gradient-to-b from-[#181d36] via-[#242b4d] to-[#f8fafc] pt-7 pb-4 px-5">
+
+            <!-- Header do Usuário -->
+            <div class="flex items-center justify-between mb-5">
+                <div>
+                    <h1 class="text-white text-[23px] font-bold leading-snug tracking-tight">
+                        Bem-vindo ao<br>SuplyFast!
+                    </h1>
+                </div>
+
+                <div class="flex items-center gap-3">
+                    <!-- Avatar Usuário -->
+                    <div class="w-11 h-11 rounded-full border-2 border-white/60 bg-blue-100 overflow-hidden shadow-sm flex items-center justify-center">
+                        <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=120&auto=format&fit=crop&q=80" alt="Avatar Usuário" class="w-full h-full object-cover">
+                    </div>
+                    <!-- Ícone de Notificação -->
+                    <button type="button" aria-label="Notificações" class="w-10 h-10 rounded-full flex items-center justify-center text-white hover:bg-white/10 transition-colors">
+                        <svg class="w-6 h-6 stroke-current fill-none stroke-2" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Barra de Pesquisa -->
+            <div class="relative">
+                <div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none text-slate-400">
+                    <svg class="w-5 h-5 stroke-current fill-none stroke-2" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                    </svg>
+                </div>
+                <input 
+                    type="text" 
+                    placeholder="Descubra seu próximo destino ou serviço..." 
+                    class="w-full bg-white pl-11 pr-4 py-3 rounded-full text-xs placeholder:text-slate-400 shadow-sm border border-slate-200/80 outline-none focus:ring-2 focus:ring-blue-500/30 transition-all text-slate-700"
+                >
+            </div>
+        </header>
+
+        <!-- Conteúdo Principal com Distribuição Perfeita e Sem Espaço Vazio -->
+        <main class="flex-1 overflow-y-auto px-5 pb-[76px] flex flex-col justify-between gap-3.5 no-scrollbar">
+
+            <!-- 1. Barra de Ações Rápidas (5 botões - Estilo Flat Minimalista) -->
+            <section class="grid grid-cols-5 gap-2 pt-1 text-center">
+                <!-- 1. Instruções ao Agente (Agente de IA) -->
+                <button type="button" class="group flex flex-col items-center gap-1.5 focus:outline-none">
+                    <div class="w-14 h-14 rounded-2xl bg-white border border-slate-200/80 shadow-xs flex items-center justify-center text-[#181d36] group-hover:border-blue-500 group-hover:text-blue-600 group-hover:shadow-sm group-active:scale-95 transition-all">
+                        <svg class="w-6 h-6 stroke-current fill-none stroke-2" viewBox="0 0 24 24">
+                            <!-- Antena do Agente IA com sinal de rede -->
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 2v3m-2.5-1.5h5" />
+                            <!-- Cabeça do Agente IA -->
+                            <rect x="4" y="5" width="16" height="14" rx="4" />
+                            <!-- Sensores laterais de comunicação -->
+                            <path stroke-linecap="round" d="M2 10v4M22 10v4" />
+                            <!-- Olhos inteligentes do Agente -->
+                            <circle cx="9" cy="11" r="1.3" fill="currentColor" stroke="none" />
+                            <circle cx="15" cy="11" r="1.3" fill="currentColor" stroke="none" />
+                            <!-- Linha de fala / processamento digital -->
+                            <path stroke-linecap="round" d="M9 15h6" />
+                        </svg>
+                    </div>
+                    <span class="h-7 flex items-center justify-center text-[10px] font-semibold text-slate-700 group-hover:text-slate-900 tracking-tight leading-tight transition-colors text-center">Instruções<br>ao Agente</span>
+                </button>
+
+                <!-- 2. Agenda -->
+                <button type="button" class="group flex flex-col items-center gap-1.5 focus:outline-none">
+                    <div class="w-14 h-14 rounded-2xl bg-white border border-slate-200/80 shadow-xs flex items-center justify-center text-[#181d36] group-hover:border-blue-500 group-hover:text-blue-600 group-hover:shadow-sm group-active:scale-95 transition-all">
+                        <svg class="w-6 h-6 stroke-current fill-none stroke-2" viewBox="0 0 24 24">
+                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+                            <line x1="16" y1="2" x2="16" y2="6" />
+                            <line x1="8" y1="2" x2="8" y2="6" />
+                            <line x1="3" y1="10" x2="21" y2="10" />
+                        </svg>
+                    </div>
+                    <span class="h-7 flex items-center justify-center text-[11px] font-semibold text-slate-700 group-hover:text-slate-900 tracking-tight transition-colors text-center">Agenda</span>
+                </button>
+
+                <!-- 3. Integrações -->
+                <button type="button" class="group flex flex-col items-center gap-1.5 focus:outline-none">
+                    <div class="w-14 h-14 rounded-2xl bg-white border border-slate-200/80 shadow-xs flex items-center justify-center text-[#181d36] group-hover:border-blue-500 group-hover:text-blue-600 group-hover:shadow-sm group-active:scale-95 transition-all">
+                        <svg class="w-6 h-6 stroke-current fill-none stroke-2" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z" />
+                        </svg>
+                    </div>
+                    <span class="h-7 flex items-center justify-center text-[10.5px] font-semibold text-slate-700 group-hover:text-slate-900 tracking-tight transition-colors text-center">Integrações</span>
+                </button>
+
+                <!-- Comunidade -->
+                <button type="button" class="group flex flex-col items-center gap-1.5 focus:outline-none">
+                    <div class="w-14 h-14 rounded-2xl bg-white border border-slate-200/80 shadow-xs flex items-center justify-center text-[#181d36] group-hover:border-blue-500 group-hover:text-blue-600 group-hover:shadow-sm group-active:scale-95 transition-all">
+                        <svg class="w-6 h-6 stroke-current fill-none stroke-2" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                            <circle cx="9" cy="7" r="4" />
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M16 3.13a4 4 0 0 1 0 7.75" />
+                        </svg>
+                    </div>
+                    <span class="h-7 flex items-center justify-center text-[11px] font-semibold text-slate-700 group-hover:text-slate-900 tracking-tight transition-colors text-center">Comunidade</span>
+                </button>
+
+                <!-- SuplyShop -->
+                <button type="button" class="group flex flex-col items-center gap-1.5 focus:outline-none">
+                    <div class="w-14 h-14 rounded-2xl bg-white border border-slate-200/80 shadow-xs flex items-center justify-center text-[#181d36] group-hover:border-blue-500 group-hover:text-blue-600 group-hover:shadow-sm group-active:scale-95 transition-all">
+                        <svg class="w-6 h-6 stroke-current fill-none stroke-2" viewBox="0 0 24 24">
+                            <circle cx="9" cy="21" r="1" />
+                            <circle cx="20" cy="21" r="1" />
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6" />
+                        </svg>
+                    </div>
+                    <span class="h-7 flex items-center justify-center text-[11px] font-semibold text-slate-700 group-hover:text-slate-900 tracking-tight transition-colors text-center">SuplyShop</span>
+                </button>
+            </section>
+
+            <!-- Card Banner Carrossel Interativo (Hero) -->
+            <section class="flex flex-col gap-2.5">
+                <!-- Container do Carrossel com Snap Scroll -->
+                <div id="hero-carousel" class="flex overflow-x-auto snap-x snap-mandatory scroll-smooth no-scrollbar rounded-3xl shadow-lg border border-white/20">
+                    
+                    <!-- Slide 1: Guia de Uso da Plataforma (Engenharia & Tecnologia) -->
+                    <div class="min-w-full snap-center relative h-[190px] flex flex-col justify-between p-5 bg-slate-900 group cursor-pointer">
+                        <img 
+                            src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=800&auto=format&fit=crop" 
+                            alt="Engenharia e Guia de Uso" 
+                            class="absolute inset-0 w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700 pointer-events-none"
+                        >
+                        <!-- Overlay uniforme escuro + gradiente de contraste -->
+                        <div class="absolute inset-0 bg-black/40 pointer-events-none"></div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/30 to-transparent pointer-events-none"></div>
+
+                        <div class="relative z-10 max-w-[220px] pt-1">
+                            <h2 class="text-white text-lg font-extrabold leading-snug tracking-tight drop-shadow-md">
+                                Guia de Uso da Plataforma
+                            </h2>
+                        </div>
+
+                        <div class="relative z-10">
+                            <button type="button" class="px-5.5 py-2 rounded-full text-xs font-bold text-slate-900 bg-white hover:bg-slate-100 active:scale-95 shadow-md transition-all">
+                                Saber Mais
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Slide 2: Como você contribui a SupplyFast (Pessoas & Engenharia em Equipe) -->
+                    <div class="min-w-full snap-center relative h-[190px] flex flex-col justify-between p-5 bg-slate-900 group cursor-pointer">
+                        <img 
+                            src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?q=80&w=800&auto=format&fit=crop" 
+                            alt="Equipe e Colaboração" 
+                            class="absolute inset-0 w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700 pointer-events-none"
+                        >
+                        <!-- Overlay uniforme escuro + gradiente de contraste -->
+                        <div class="absolute inset-0 bg-black/40 pointer-events-none"></div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/30 to-transparent pointer-events-none"></div>
+
+                        <div class="relative z-10 max-w-[230px] pt-1">
+                            <h2 class="text-white text-lg font-extrabold leading-snug tracking-tight drop-shadow-md">
+                                Como você contribui a SupplyFast
+                            </h2>
+                        </div>
+
+                        <div class="relative z-10">
+                            <button type="button" class="px-5.5 py-2 rounded-full text-xs font-bold text-slate-900 bg-white hover:bg-slate-100 active:scale-95 shadow-md transition-all">
+                                Saber Mais
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Slide 3: Quem Somos? (Armazém Logístico & Estoque Moderno) -->
+                    <div class="min-w-full snap-center relative h-[190px] flex flex-col justify-between p-5 bg-slate-900 group cursor-pointer">
+                        <img 
+                            src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=800&auto=format&fit=crop" 
+                            alt="Armazém e Estoque Moderno" 
+                            class="absolute inset-0 w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700 pointer-events-none"
+                        >
+                        <!-- Overlay uniforme escuro + gradiente de contraste -->
+                        <div class="absolute inset-0 bg-black/40 pointer-events-none"></div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/30 to-transparent pointer-events-none"></div>
+
+                        <div class="relative z-10 max-w-[210px] pt-1">
+                            <h2 class="text-white text-lg font-extrabold leading-snug tracking-tight drop-shadow-md">
+                                Quem Somos?
+                            </h2>
+                        </div>
+
+                        <div class="relative z-10">
+                            <button type="button" class="px-5.5 py-2 rounded-full text-xs font-bold text-slate-900 bg-white hover:bg-slate-100 active:scale-95 shadow-md transition-all">
+                                Saber Mais
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Paginação Dinâmica (Dots Clicáveis) -->
+                <div class="flex items-center justify-center gap-1.5 pt-1" id="carousel-dots">
+                    <button type="button" data-slide="0" aria-label="Ir para slide 1" class="carousel-dot h-1.5 w-6 bg-slate-500 rounded-full transition-all duration-300 focus:outline-none"></button>
+                    <button type="button" data-slide="1" aria-label="Ir para slide 2" class="carousel-dot h-1.5 w-2 bg-slate-300 rounded-full transition-all duration-300 focus:outline-none"></button>
+                    <button type="button" data-slide="2" aria-label="Ir para slide 3" class="carousel-dot h-1.5 w-2 bg-slate-300 rounded-full transition-all duration-300 focus:outline-none"></button>
+                </div>
+            </section>
+
+            <!-- 2. Seção Ferramentas para Você -->
+            <section class="space-y-3">
+                <h2 class="text-base font-extrabold text-slate-900 tracking-tight">
+                    Ferramentas para Você
+                </h2>
+
+                <!-- Carrossel de Cards Horizontais -->
+                <div class="flex gap-3.5 overflow-x-auto pb-1 no-scrollbar -mx-1 px-1">
+                    
+                    <!-- Card 1: Gerador de Documentos PDF - Cor Única e Respiração -->
+                    <div class="w-[155px] h-[210px] shrink-0 bg-white rounded-3xl p-3.5 flex flex-col justify-between items-center border border-slate-200/70 shadow-xs hover:shadow-md hover:-translate-y-0.5 transition-all group cursor-pointer">
+                        <div class="w-full flex-1 flex items-center justify-center p-1">
+                            <img src="/icon-pdf.jpg" alt="Gerador de Documentos PDF" class="w-22 h-22 object-contain rounded-2xl drop-shadow-sm group-hover:scale-105 transition-transform duration-200">
+                        </div>
+
+                        <div class="w-full pt-1 pb-0.5 text-center min-h-[44px] flex items-center justify-center">
+                            <p class="text-[12.5px] font-bold text-slate-900 leading-tight tracking-tight">
+                                Gerador de<br>Documentos PDF
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Card 2: Gerenciador de Mensagens (Email/WA) - Cor Única e Respiração -->
+                    <div class="w-[155px] h-[210px] shrink-0 bg-white rounded-3xl p-3.5 flex flex-col justify-between items-center border border-slate-200/70 shadow-xs hover:shadow-md hover:-translate-y-0.5 transition-all group cursor-pointer">
+                        <div class="w-full flex-1 flex items-center justify-center p-1">
+                            <img src="/icon-messages.jpg" alt="Gerenciador de Mensagens (Email e WhatsApp)" class="w-22 h-22 object-contain rounded-2xl drop-shadow-sm group-hover:scale-105 transition-transform duration-200">
+                        </div>
+
+                        <div class="w-full pt-1 pb-0.5 text-center min-h-[44px] flex items-center justify-center">
+                            <p class="text-[11.5px] font-bold text-slate-900 leading-tight tracking-tight">
+                                Gerenciador de<br>Mensagens (WA)
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Card 3: Dados e Estoque - Cor Única e Respiração -->
+                    <div class="w-[155px] h-[210px] shrink-0 bg-white rounded-3xl p-3.5 flex flex-col justify-between items-center border border-slate-200/70 shadow-xs hover:shadow-md hover:-translate-y-0.5 transition-all group cursor-pointer">
+                        <div class="w-full flex-1 flex items-center justify-center p-1">
+                            <div class="w-22 h-22 flex items-center justify-center group-hover:scale-105 transition-transform duration-200">
+                                <svg class="w-full h-full overflow-visible" viewBox="0 0 100 90">
+                                    <defs>
+                                        <!-- Gradientes 3D para Cilindros do Banco de Dados -->
+                                        <linearGradient id="dbTop" x1="0%" y1="0%" x2="100%" y2="100%">
+                                            <stop offset="0%" stop-color="#93c5fd" />
+                                            <stop offset="100%" stop-color="#3b82f6" />
+                                        </linearGradient>
+                                        <linearGradient id="dbBody" x1="0%" y1="0%" x2="100%" y2="0%">
+                                            <stop offset="0%" stop-color="#2563eb" />
+                                            <stop offset="35%" stop-color="#60a5fa" />
+                                            <stop offset="85%" stop-color="#1d4ed8" />
+                                            <stop offset="100%" stop-color="#1e40af" />
+                                        </linearGradient>
+                                        <!-- Gradientes 3D para Caixas de Papelão -->
+                                        <linearGradient id="boxFront" x1="0%" y1="0%" x2="100%" y2="100%">
+                                            <stop offset="0%" stop-color="#fcd34d" />
+                                            <stop offset="100%" stop-color="#d97706" />
+                                        </linearGradient>
+                                        <linearGradient id="boxTape" x1="0%" y1="0%" x2="0%" y2="100%">
+                                            <stop offset="0%" stop-color="#b45309" />
+                                            <stop offset="100%" stop-color="#92400e" />
+                                        </linearGradient>
+                                        <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+                                            <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#000" flood-opacity="0.1" />
+                                        </filter>
+                                    </defs>
+
+                                    <!-- 1. Servidor / Cilindros de Banco de Dados 3D -->
+                                    <g filter="url(#softShadow)" transform="translate(2, 8)">
+                                        <path d="M 4 48 C 4 54 22 57 32 57 C 42 57 60 54 60 48 L 60 62 C 60 68 42 71 32 71 C 22 71 4 68 4 62 Z" fill="url(#dbBody)" />
+                                        <ellipse cx="32" cy="48" rx="28" ry="8" fill="url(#dbTop)" />
+
+                                        <path d="M 4 28 C 4 34 22 37 32 37 C 42 37 60 34 60 28 L 60 42 C 60 48 42 51 32 51 C 22 51 4 48 4 42 Z" fill="url(#dbBody)" />
+                                        <ellipse cx="32" cy="28" rx="28" ry="8" fill="url(#dbTop)" />
+
+                                        <path d="M 4 8 C 4 14 22 17 32 17 C 42 17 60 14 60 8 L 60 22 C 60 28 42 31 32 31 C 22 31 4 28 4 22 Z" fill="url(#dbBody)" />
+                                        <ellipse cx="32" cy="8" rx="28" ry="8" fill="url(#dbTop)" />
+
+                                        <circle cx="20" cy="18" r="1.8" fill="#4ade80" />
+                                        <circle cx="26" cy="18" r="1.8" fill="#38bdf8" />
+                                        <circle cx="20" cy="38" r="1.8" fill="#4ade80" />
+                                        <circle cx="26" cy="38" r="1.8" fill="#38bdf8" />
+                                        <circle cx="20" cy="58" r="1.8" fill="#4ade80" />
+                                        <circle cx="26" cy="58" r="1.8" fill="#38bdf8" />
+                                    </g>
+
+                                    <!-- 2. Estante de Estoque 3D com Caixas de Papelão -->
+                                    <g filter="url(#softShadow)" transform="translate(54, 4)">
+                                        <rect x="0" y="0" width="4" height="74" rx="2" fill="#334155" />
+                                        <rect x="40" y="0" width="4" height="74" rx="2" fill="#334155" />
+                                        <rect x="0" y="34" width="44" height="4" rx="1.5" fill="#475569" />
+                                        <rect x="0" y="70" width="44" height="4" rx="1.5" fill="#475569" />
+
+                                        <g transform="translate(4, 8)">
+                                            <rect x="0" y="0" width="16" height="26" rx="2.5" fill="url(#boxFront)" />
+                                            <rect x="5.5" y="4" width="5" height="10" rx="1" fill="url(#boxTape)" />
+                                        </g>
+                                        <g transform="translate(23, 8)">
+                                            <rect x="0" y="0" width="16" height="26" rx="2.5" fill="url(#boxFront)" />
+                                            <rect x="5.5" y="4" width="5" height="10" rx="1" fill="url(#boxTape)" />
+                                        </g>
+
+                                        <g transform="translate(4, 44)">
+                                            <rect x="0" y="0" width="16" height="26" rx="2.5" fill="url(#boxFront)" />
+                                            <rect x="5.5" y="4" width="5" height="10" rx="1" fill="url(#boxTape)" />
+                                        </g>
+                                        <g transform="translate(23, 44)">
+                                            <rect x="0" y="0" width="16" height="26" rx="2.5" fill="url(#boxFront)" />
+                                            <rect x="5.5" y="4" width="5" height="10" rx="1" fill="url(#boxTape)" />
+                                        </g>
+                                    </g>
+                                </svg>
+                            </div>
+                        </div>
+
+                        <div class="w-full pt-1 pb-0.5 text-center min-h-[44px] flex items-center justify-center">
+                            <p class="text-[12.5px] font-bold text-slate-900 leading-tight tracking-tight">
+                                Dados e Estoque
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Card 4: Gerenciar Fornecedores (Planeta + Pessoas Interligadas) - Cor Única e Respiração -->
+                    <div class="w-[155px] h-[210px] shrink-0 bg-white rounded-3xl p-3.5 flex flex-col justify-between items-center border border-slate-200/70 shadow-xs hover:shadow-md hover:-translate-y-0.5 transition-all group cursor-pointer">
+                        <div class="w-full flex-1 flex items-center justify-center p-1">
+                            <div class="w-22 h-22 flex items-center justify-center group-hover:scale-105 transition-transform duration-200">
+                                <svg class="w-full h-full overflow-visible" viewBox="0 0 100 90">
+                                    <defs>
+                                        <!-- Gradiente da Esfera do Planeta -->
+                                        <radialGradient id="planetOcean" cx="38%" cy="32%" r="65%">
+                                            <stop offset="0%" stop-color="#38bdf8" />
+                                            <stop offset="45%" stop-color="#2563eb" />
+                                            <stop offset="80%" stop-color="#1d4ed8" />
+                                            <stop offset="100%" stop-color="#0f172a" />
+                                        </radialGradient>
+                                        <!-- Gradientes dos Continentes -->
+                                        <linearGradient id="continentGreen" x1="0%" y1="0%" x2="100%" y2="100%">
+                                            <stop offset="0%" stop-color="#6ee7b7" />
+                                            <stop offset="100%" stop-color="#059669" />
+                                        </linearGradient>
+                                        <!-- Gradientes dos Avatares de Pessoas -->
+                                        <linearGradient id="avatarAmber" x1="0%" y1="0%" x2="100%" y2="100%">
+                                            <stop offset="0%" stop-color="#fbbf24" />
+                                            <stop offset="100%" stop-color="#d97706" />
+                                        </linearGradient>
+                                        <linearGradient id="avatarPurple" x1="0%" y1="0%" x2="100%" y2="100%">
+                                            <stop offset="0%" stop-color="#a78bfa" />
+                                            <stop offset="100%" stop-color="#6366f1" />
+                                        </linearGradient>
+                                        <linearGradient id="avatarTeal" x1="0%" y1="0%" x2="100%" y2="100%">
+                                            <stop offset="0%" stop-color="#34d399" />
+                                            <stop offset="100%" stop-color="#0d9488" />
+                                        </linearGradient>
+                                        <!-- Filtros de Sombra Suave -->
+                                        <filter id="globeShadow" x="-30%" y="-30%" width="160%" height="160%">
+                                            <feDropShadow dx="0" dy="3" stdDeviation="2.5" flood-color="#1e3a8a" flood-opacity="0.25" />
+                                        </filter>
+                                        <filter id="pinShadow" x="-30%" y="-30%" width="160%" height="160%">
+                                            <feDropShadow dx="0" dy="2" stdDeviation="1.5" flood-color="#000" flood-opacity="0.2" />
+                                        </filter>
+                                        <!-- Máscara de Recorte do Globo -->
+                                        <clipPath id="globeClip">
+                                            <circle cx="50" cy="45" r="23" />
+                                        </clipPath>
+                                    </defs>
+
+                                    <!-- Fios Interligados (Rede Global Conectando as Pessoas de Vários Lugares) -->
+                                    <path d="M 18 22 C 32 10, 68 12, 82 24" fill="none" stroke="#60a5fa" stroke-width="1.6" stroke-dasharray="3 2" stroke-linecap="round" />
+                                    <path d="M 82 24 C 88 48, 72 68, 50 74" fill="none" stroke="#818cf8" stroke-width="1.6" stroke-dasharray="3 2" stroke-linecap="round" />
+                                    <path d="M 50 74 C 28 68, 12 48, 18 22" fill="none" stroke="#34d399" stroke-width="1.6" stroke-dasharray="3 2" stroke-linecap="round" />
+
+                                    <!-- Pulso de dados / nós luminosos nos fios -->
+                                    <circle cx="50" cy="14" r="2" fill="#93c5fd" />
+                                    <circle cx="78" cy="50" r="2" fill="#c4b5fd" />
+                                    <circle cx="22" cy="52" r="2" fill="#6ee7b7" />
+
+                                    <!-- Globo / Planeta Terra 3D -->
+                                    <circle cx="50" cy="45" r="24.5" fill="none" stroke="#60a5fa" stroke-width="1.2" opacity="0.3" />
+                                    <circle cx="50" cy="45" r="23" fill="url(#planetOcean)" filter="url(#globeShadow)" />
+
+                                    <!-- Continentes e Linhas de Coordenadas na Superfície -->
+                                    <g clip-path="url(#globeClip)">
+                                        <path d="M 32 30 C 35 27 42 28 44 32 C 46 36 41 40 37 39 C 33 38 30 34 32 30 Z" fill="url(#continentGreen)" opacity="0.9" />
+                                        <path d="M 52 28 C 58 26 68 30 67 36 C 66 42 59 44 54 41 C 49 38 48 31 52 28 Z" fill="url(#continentGreen)" opacity="0.9" />
+                                        <path d="M 38 46 C 42 44 46 48 45 54 C 44 60 38 62 36 57 C 34 52 35 48 38 46 Z" fill="url(#continentGreen)" opacity="0.9" />
+                                        <path d="M 56 46 C 62 44 66 50 64 56 C 62 62 57 60 55 54 C 53 49 54 46 56 46 Z" fill="url(#continentGreen)" opacity="0.9" />
+                                        
+                                        <!-- Paralelos / Meridianos de Rede -->
+                                        <ellipse cx="50" cy="45" rx="23" ry="9" fill="none" stroke="#ffffff" stroke-width="0.7" opacity="0.25" />
+                                        <ellipse cx="50" cy="45" rx="10" ry="23" fill="none" stroke="#ffffff" stroke-width="0.7" opacity="0.25" />
+                                        
+                                        <!-- Brilho Gloss Superior -->
+                                        <ellipse cx="43" cy="35" rx="10" ry="5" fill="#ffffff" opacity="0.2" transform="rotate(-25 43 35)" />
+                                    </g>
+
+                                    <!-- Linhas de Conexão Internas no Planeta -->
+                                    <line x1="18" y1="22" x2="37" y2="39" stroke="#93c5fd" stroke-width="1.2" opacity="0.7" stroke-dasharray="2 2" />
+                                    <circle cx="37" cy="39" r="1.8" fill="#ffffff" />
+                                    <line x1="82" y1="24" x2="59" y2="41" stroke="#c4b5fd" stroke-width="1.2" opacity="0.7" stroke-dasharray="2 2" />
+                                    <circle cx="59" cy="41" r="1.8" fill="#ffffff" />
+                                    <line x1="50" y1="74" x2="45" y2="54" stroke="#6ee7b7" stroke-width="1.2" opacity="0.7" stroke-dasharray="2 2" />
+                                    <circle cx="45" cy="54" r="1.8" fill="#ffffff" />
+
+                                    <!-- Avatar 1: Pessoa Topo-Esquerda (América/Europa) -->
+                                    <g filter="url(#pinShadow)">
+                                        <circle cx="18" cy="22" r="9" fill="#ffffff" />
+                                        <circle cx="18" cy="22" r="7.5" fill="url(#avatarAmber)" />
+                                        <circle cx="18" cy="19.2" r="2.5" fill="#ffffff" />
+                                        <path d="M 13.5 27 C 13.5 23.8 15.5 23 18 23 C 20.5 23 22.5 23.8 22.5 27 Z" fill="#ffffff" />
+                                    </g>
+
+                                    <!-- Avatar 2: Pessoa Topo-Direita (Ásia/Global) -->
+                                    <g filter="url(#pinShadow)">
+                                        <circle cx="82" cy="24" r="9" fill="#ffffff" />
+                                        <circle cx="82" cy="24" r="7.5" fill="url(#avatarPurple)" />
+                                        <circle cx="82" cy="21.2" r="2.5" fill="#ffffff" />
+                                        <path d="M 77.5 29 C 77.5 25.8 79.5 25 82 25 C 84.5 25 86.5 25.8 86.5 29 Z" fill="#ffffff" />
+                                    </g>
+
+                                    <!-- Avatar 3: Pessoa Base-Centro (América Latina/África) -->
+                                    <g filter="url(#pinShadow)">
+                                        <circle cx="50" cy="74" r="9" fill="#ffffff" />
+                                        <circle cx="50" cy="74" r="7.5" fill="url(#avatarTeal)" />
+                                        <circle cx="50" cy="71.2" r="2.5" fill="#ffffff" />
+                                        <path d="M 45.5 79 C 45.5 75.8 47.5 75 50 75 C 52.5 75 54.5 75.8 54.5 79 Z" fill="#ffffff" />
+                                    </g>
+                                </svg>
+                            </div>
+                        </div>
+
+                        <div class="w-full pt-1 pb-0.5 text-center min-h-[44px] flex items-center justify-center">
+                            <p class="text-[12.5px] font-bold text-slate-900 leading-tight tracking-tight">
+                                Gerenciar<br>Fornecedores
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+        </main>
+
+        <!-- Barra de Navegação Inferior -->
+        <nav class="absolute bottom-0 inset-x-0 bg-white/95 backdrop-blur-md border-t border-slate-200/70 py-2.5 px-6 flex items-center justify-around z-30">
+            <!-- 1. Home (Ativo) -->
+            <button type="button" class="nav-item active flex flex-col items-center gap-1 text-[#181b34] font-bold focus:outline-none flex-1">
+                <svg class="w-6 h-6 stroke-current fill-none stroke-2" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+                    <polyline points="9 22 9 12 15 12 15 22" />
+                </svg>
+                <span class="text-[11px] leading-none">Home</span>
+            </button>
+
+            <!-- 2. Perfil -->
+            <button type="button" class="nav-item flex flex-col items-center gap-1 text-slate-400 font-medium hover:text-slate-600 focus:outline-none flex-1 transition-colors">
+                <svg class="w-6 h-6 stroke-current fill-none stroke-2" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                    <circle cx="12" cy="7" r="4" />
+                </svg>
+                <span class="text-[11px] leading-none">Perfil</span>
+            </button>
+
+            <!-- 3. Mais -->
+            <button type="button" class="nav-item flex flex-col items-center gap-1 text-slate-400 font-medium hover:text-slate-600 focus:outline-none flex-1 transition-colors">
+                <svg class="w-6 h-6 stroke-current fill-none stroke-2" viewBox="0 0 24 24">
+                    <line x1="3" y1="12" x2="21" y2="12" />
+                    <line x1="3" y1="6" x2="21" y2="6" />
+                    <line x1="3" y1="18" x2="21" y2="18" />
+                </svg>
+                <span class="text-[11px] leading-none">Mais</span>
+            </button>
+        </nav>
+
+    </div>
+
+    <script type="module" src="./app.js"></script>
+</body>
+</html>
