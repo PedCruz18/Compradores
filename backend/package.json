@@ -6,7 +6,9 @@
   "dependencies": {
     "@prisma/adapter-better-sqlite3": "^7.10.0",
     "@prisma/client": "^7.10.0",
-    "better-sqlite3": "^13.0.3",
     "dotenv": "^17.4.2"
+  },
+  "allowScripts": {
+    "better-sqlite3@12.11.1": true
   }
 }
