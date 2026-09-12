@@ -1,3 +1,5 @@
+//arquivo prototipo inicial para contar todos os sistemas de frontend(interfaces)
+
 // Gerenciador de interação da interface SuplyFast
 document.addEventListener('DOMContentLoaded', () => {
     // 1. Navegação Horizontal entre Telas (Home <-> Perfil <-> Mais com transição suave)

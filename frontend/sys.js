@@ -1,0 +1,1 @@
+// arquivo inicial prototipo para conter todas as ligações com o backend
