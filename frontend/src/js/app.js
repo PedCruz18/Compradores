@@ -219,6 +219,19 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+
+
+
+
+
+
+
+
+
+
+
+
+    
     // 3. Tela de Instruções ao Agente & Animação de Grãos Azuis
     const btnAgentInstructions = document.getElementById('btn-agent-instructions');
     const viewAgentInstructions = document.getElementById('view-agent-instructions');
